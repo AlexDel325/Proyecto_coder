@@ -167,30 +167,66 @@ footer {
     margin-right: 10%;
     padding-bottom: 20%;
     padding-top: 20%;
+    background-color: #30303091;
 }
 
 .actividades1 div {
     align-self: end;
+    margin: 4rem;
+}
+
+.actividades2 div {
+    margin: 4rem;
 }
 
 .actividades2 {
     margin-left: auto;
 }
 
+.actividades1 h2 {
+    font-size: 4em;
+}
+
+.actividades2 h2{
+    font-size: 4em;
+}
+
+.actividades1 h2, .actividades1 p {
+    margin: 4rem;
+}
+
+.actividades2 h2, .actividades2 p{
+    margin: 4rem;
+}
+
 .crossfit {
-    background: url(../img/imagen_provisoria1.jpg);
+    background: url(../img/crossfit_banner_img.png);
+    color: #F9F2ED;
+    font-weight: 600;
+    border-bottom: #303030 6rem solid;
+    border-top: #303030 6rem solid;
 }
 
 .boxeo {
-    background: url(../img/imagen_provisoria1.jpg);
+    background: url(../img/boxeo_banner_img.png);
+    color: #F9F2ED;
+    font-weight: 600;
+    border-bottom: #303030 6rem solid;
 }
 
 .zumba {
-    background: url(../img/imagen_provisoria1.jpg);
+    background: url(../img/zumba_banner_img.png);
+    color: #F9F2ED;
+    font-weight: 600;
+    background-position: 0rem -25rem;
+    border-bottom: #303030 6rem solid;
 }
 
 .stretching {
-    background: url(../img/imagen_provisoria1.jpg);
+    background: url(../img/st_banner_img.png);
+    color: #F9F2ED;
+    font-weight: 600;
+    background-position: 0rem -25rem;
 }
 
 /* ------- cronograma ------ */
@@ -267,9 +303,17 @@ iframe {
 
 /* -merch-intro div utiliza la clase actividades1- */
 .merch-intro {
-    background: url(../img/imagen_provisoria1.jpg);
+    background: url(../img/productos_bg.png);
+    color:#F9F2ED;
+    background-position: 0 -10rem;
+    border-bottom: #303030 6rem solid;
+    border-top: #303030 2rem solid;
 }
 
+.merch-intro h2{
+    font-size: 3em;
+    margin-bottom: 1rem;
+}
 
 
 .merch {
