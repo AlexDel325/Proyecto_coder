@@ -11,6 +11,13 @@ html {
     background-color: #F9F2ED;
 }
 
+/* ------- imagenes ------ */
+
+img {
+    max-inline-size: 100%;
+    block-size: auto;
+}
+
 /* ------- header ------ */
 
 header {
@@ -66,23 +73,18 @@ footer {
     display: flex;
     flex-direction: row-reverse;
     padding: 2rem 0;
+    margin-right: 10rem;
 }
 
 .redes a {
     font-size: 0;
-    width: 5rem;
-    height: 5rem;
+    width: 3.25rem;
+    height: 3.25rem;
     margin: 0 1rem;
-
 }
 
-.facebook {
-    background: no-repeat url(../img/facebook.png);
-    background-size: 100%;
-}
-
-.whatsapp {
-    background: no-repeat url(../img/whatsapp.png);
+.github {
+    background: no-repeat url(../img/github.svg);
     background-size: 100%;
 }
 
@@ -154,80 +156,78 @@ footer {
     flex-direction: column;
 }
 
+.prof img{
+    border-radius: 2rem;
+}
+
 /* ------- actividades ------ */
 
-.actividades1,
-.actividades2 {
-    height: 50vh;
-    width: 50%;
+.fondo {
+    background: url(../img/background.png);
+    background-size: cover;
+    color: #F9F2ED;
+    font-weight: 600;
+    border-bottom: #303030 solid 2.25rem;
+    border-top: #303030 solid 2.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.fondo div {
+    margin: 0;
+}
+
+.fondo div figure {
+    margin: 10rem;
+    margin-bottom: -0.5rem;
+    padding: 0;
+}
+
+.foto {
+    width: 500rem;
+    max-width: 55%;
+}
+
+.ac_reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.actividades {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin-left: 10%;
-    margin-right: 10%;
-    padding-bottom: 20%;
-    padding-top: 20%;
-    background-color: #30303091;
+    background-color: #30303094;
+    margin: 0 30rem 0 10rem;
+
 }
 
-.actividades1 div {
-    align-self: end;
-    margin: 4rem;
+
+.actividades h2 {
+    font-size: 3em;
+    margin-top: 2em;
+    margin-bottom: 2rem;
+    margin-left: 4rem;
+    max-width: 60%;
 }
 
-.actividades2 div {
-    margin: 4rem;
+.actividades p,
+.actividades div {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-top: 2rem;
 }
 
-.actividades2 {
-    margin-left: auto;
+.actividades div {
+    margin: 2rem;
+    align-self: center;
 }
 
-.actividades1 h2 {
-    font-size: 4em;
+.actividades div a {
+    margin: .5rem;
+    font-size: .8em;
 }
 
-.actividades2 h2{
-    font-size: 4em;
-}
-
-.actividades1 h2, .actividades1 p {
-    margin: 4rem;
-}
-
-.actividades2 h2, .actividades2 p{
-    margin: 4rem;
-}
-
-.crossfit {
-    background: url(../img/crossfit_banner_img.png);
-    color: #F9F2ED;
-    font-weight: 600;
-    border-bottom: #303030 6rem solid;
-    border-top: #303030 6rem solid;
-}
-
-.boxeo {
-    background: url(../img/boxeo_banner_img.png);
-    color: #F9F2ED;
-    font-weight: 600;
-    border-bottom: #303030 6rem solid;
-}
-
-.zumba {
-    background: url(../img/zumba_banner_img.png);
-    color: #F9F2ED;
-    font-weight: 600;
-    background-position: 0rem -25rem;
-    border-bottom: #303030 6rem solid;
-}
-
-.stretching {
-    background: url(../img/st_banner_img.png);
-    color: #F9F2ED;
-    font-weight: 600;
-    background-position: 0rem -25rem;
-}
 
 /* ------- cronograma ------ */
 
@@ -300,21 +300,37 @@ iframe {
 
 
 /* ------- merch ------ */
-
-/* -merch-intro div utiliza la clase actividades1- */
-.merch-intro {
-    background: url(../img/productos_bg.png);
-    color:#F9F2ED;
-    background-position: 0 -10rem;
-    border-bottom: #303030 6rem solid;
-    border-top: #303030 2rem solid;
+.baner-merch {
+    width: 50%;
 }
 
-.merch-intro h2{
+.baner-merch h2 {
+    margin-top: 3em;
     font-size: 3em;
-    margin-bottom: 1rem;
+    margin-left: 10rem;
 }
 
+.baner-merch p {
+    font-size: .9em;
+    margin-left: 10rem;
+}
+
+.baner-merch div {
+    margin-bottom: 6em;
+    margin-left: 10rem;
+}
+
+.baner-merch div {
+    align-self: flex-start;
+}
+
+.baner-merch div figure {
+    align-self: center;
+}
+
+.baner-merch div figure img {
+    width: 100vw
+}
 
 .merch {
     display: grid;
@@ -339,15 +355,21 @@ iframe {
 .productos figure {
     text-align: center;
     grid-column: 1/ span 2;
-
 }
 
 .productos p {
     text-align: left;
+    font-weight: 400;
 }
 
 .precio {
     text-align: right !important;
+}
+
+.foto_p {
+    max-width: 300px;
+    border-radius: .8rem;
+    border: #3030301e solid 1px;
 }
 
 .venta {
@@ -357,6 +379,11 @@ iframe {
     text-align: center;
     margin-top: 10%;
     margin-bottom: 10%;
+    font-weight: 600;
+}
+
+.venta p{
+    font-size: 2rem;
 }
 
 /* ------- contacto ------ */
