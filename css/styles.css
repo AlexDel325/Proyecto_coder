@@ -70,8 +70,6 @@ footer {
 }
 
 .redes {
-    display: flex;
-    flex-direction: row-reverse;
     padding: 2rem 0;
     margin-right: 10rem;
 }
@@ -108,6 +106,21 @@ footer {
     margin-top: 1em;
 }
 
+.nosotros-btn {
+    display: block;
+    background-color: #DB1822;
+    width: 200px;
+    border: none;
+    border-radius: 50px;
+    padding: 15px;
+    text-align: center;
+    margin-top: 1em;
+    text-decoration: none;
+    color: #F9F2ED;
+    width: 100%;
+    margin-top: 3em;
+}
+
 .boton:hover {
     background-color: #303030;
     color: #F9F2ED;
@@ -116,15 +129,12 @@ footer {
 /* ------- inicio ------ */
 
 .main {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
     background: #DB1822;
     color: #F9F2ED;
 }
 
 .main figure {
-    margin: 26rem 0;
+    padding: 15rem 0;
 }
 
 .main figure img {
@@ -138,25 +148,17 @@ footer {
 }
 
 .nosotros {
-    display: grid;
-    grid-template-rows: 1fr 6fr;
-    grid-template-columns: 1fr 2fr;
-    gap: 2rem;
-    margin: 6.15rem;
+    padding: 6.15rem;
+    background-color: #F9F2ED;
 }
 
 .nosotros h2 {
     font-size: 2em;
-    align-self: center;
-    grid-column: 1/ span 2;
+    margin: 1em;
+    margin-left: 0;
 }
 
-.nosotros p {
-    display: flex;
-    flex-direction: column;
-}
-
-.prof img{
+.prof img {
     border-radius: 2rem;
 }
 
@@ -180,7 +182,7 @@ footer {
 
 .fondo div figure {
     margin: 10rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0;
     padding: 0;
 }
 
@@ -382,7 +384,7 @@ iframe {
     font-weight: 600;
 }
 
-.venta p{
+.venta p {
     font-size: 2rem;
 }
 

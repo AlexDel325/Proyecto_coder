@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,18 +23,19 @@
             </ul>
         </nav>
     </header>
-    <section class="main">
-        <figure><img src="img/strength_logo.svg" alt="logo_de_strenth_centro_de_entrenamiento"></figure>
-        <h2>Descubre quienes somos</h2>
-        <div>
-            <a href="#nosotros" class="boton">Nosostros</a>
-        </div>
-    </section>
-    <section id="nosotros">
-        <article class="nosotros">
-            <h2>Quienes somos</h2>
-            <figure class="prof"><img src="img/nosotros.png" alt="equipo de 2 profesores"></figure>
-            <p>
+    <main class="container">
+        <section class="row main">
+            <figure class="col-12 text-center"><img src="img/strength_logo.svg"
+                    alt="logo_de_strenth_centro_de_entrenamiento"></figure>
+            <h2 class="col-12 text-center">Descubre quienes somos</h2>
+            <div class="col-12 text-center">
+                <a href="#nosotros" class="boton">Nosostros</a>
+            </div>
+        </section>
+        <section id="nosotros" class="row nosotros">
+            <h2 class="col-xl-12">Quienes somos</h2>
+            <figure class="prof col-12 col-xl-6"><img src="img/nosotros.png" alt="equipo de 2 profesores"></figure>
+            <p class=" col-12 col-xl-6">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
                 cumque eligendi dolor iste corporis, obcaecati impedit quae alias repellat
                 reprehenderit repudiandae ut commodi nihil magni deserunt praesentium quas quaerat
@@ -42,16 +44,17 @@
                 tempore impedit omnis harum aliquid ea veniam totam eveniet nobis dolor, vel aut optio.
                 Eos repellat rerum ullam id a voluptate, fugit pariatur temporibus hic architecto iusto
                 qui saepe soluta fugiat consequatur animi necessitatibus iure.
-                <a href="pages/actividades.html" class="boton">Ver actividades</a>
+                <a href="pages/actividades.html" class="nosotros-btn boton">Ver actividades</a>
             </p>
-        </article>
-    </section>
-    <footer>
-        <div class="redes">
-            <a href="https://github.com/AlexDel325" class="github">github</a>
+        </section>
+    </main>
+    <footer class="conteiner">
+        <div class="row redes justify-content-end">
+            <a href="https://github.com/AlexDel325" target="_blank" class="github">github</a>
             <a href="#" class="instagram">instagram</a>
         </div>
     </footer>
     <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
