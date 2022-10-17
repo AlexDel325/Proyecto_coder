@@ -5,80 +5,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strenth</title>
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-    <header>
-        <h1>logo</h1>
-        <figure class="logo"><img src="../img/strength_logo_min.svg" alt="logo_del_gym"></figure>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="cronograma.html">Cronograma</a></li>
-                <li><a href="#">Merchandising</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="sticky-top">
+        <h1>strength</h1>
+        <nav class="navbar navbar-dark navbar-expand-md container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/strength_logo_min.svg" alt="strength_logo" width="150" height="100">
+              </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link nav-lk" href="../pages/actividades.html">Actividades</a>
+                    <a class="nav-link nav-lk" href="../pages/cronograma.html">Cronograma</a>
+                    <a class="nav-link nav-lk" href="#">Merchandising</a>
+                    <a class="nav-link nav-lk" href="../pages/contacto.html">Contacto</a>
+                  </div>
+                </div>
+              </div>
+          </nav>
     </header>
-    <section id="merch-intro" class="fondo">
-        <div class="actividades baner-merch">
-            <h2>PRODUCTOS</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci, officia sunt? Itaque dolorem animi veritatis. Nihil enim,
-                quod impedit beatae libero delectus dignissimos. At officiis sapiente
-                inventore dolores commodi ea!
-            </p>
-            <div>
-                <a href="#merch" class="boton">Unete al equipo</a>
+    <main class="container-xl bg-claro sombra">
+        <section id="merch-intro" class="fondo row">
+            <div class="actividades col-lg col-xl-6">
+                <h2>PRODUCTOS</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Adipisci, officia sunt? Itaque dolorem animi veritatis. Nihil enim,
+                </p>
+                <div>
+                    <a href="#merch" class="boton">Unete al equipo</a>
+                </div>
             </div>
-        </div>
-        <div class="foto">
-            <figure><img src="../img/product_foto.png" alt="crossfit_foto"></figure>
-        </div>
-    </section>
-    <section id="merch" class="merch">
-        <div class="productos">
-            <figure><img src="../img/remera.png" alt="remera" class="foto_p"></figure>
-            <p>Remera</p>
-            <p class="precio">$99,99</p>
-        </div>
-        <div class="productos">
-            <figure><img src="../img/buzo.png" alt="Sudadera" class="foto_p"></figure>
-            <p>Sudadera</p>
-            <p class="precio">$99,99</p>
-        </div>
-        <div class="productos">
-            <figure><img src="../img/box_guantes.png" alt="Guantes de Boxeo" class="foto_p"></figure>
-            <p>Guantes de Boxeo</p>
-            <p class="precio">$99,99</p>
-        </div>
-        <div class="productos">
-            <figure><img src="../img/gorra.png" alt="Gorra" class="foto_p"></figure>
-            <p>Gorra</p>
-            <p class="precio">$99,99</p>
-        </div>
-        <div class="productos">
-            <figure><img src="../img/botella.png" alt="Botella de agua" class="foto_p"></figure>
-            <p>Botella de agua</p>
-            <p class="precio">$99,99</p>
-        </div>
-        <div class="productos">
-            <figure><img src="../img/guantes.png" alt="Guantes para Gym" class="foto_p"></figure>
-            <p>Guantes para Gym</p>
-            <p class="precio">$99,99</p>
-        </div>
-
-        <div class="venta">
-            <p>Venta unicamente desde el local, contactanos por mail para hacer tu encargo</p>
-            <div><a href="contacto.html" class="boton">Contactanos</a></div>
-        </div>
-    </section>
-    <footer>
-        <div class="redes">
+            <div class="foto col-lg col-xl-6 text-center">
+                <figure><img src="../img/product_foto.png" alt="crossfit_foto" class="img-fluid"></figure>
+            </div>
+        </section>
+        <section id="merch" class="row m-5">
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 fw-bold fs-2">
+                <figure><img src="../img/remera.png" alt="remera" class="img-fluid foto_p w-75"></figure>
+                <p>Remera</p>
+                <p>$99,99</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 fw-bold fs-2">
+                <figure><img src="../img/buzo.png" alt="Sudadera" class="img-fluid foto_p w-75"></figure>
+                <p>Sudadera</p>
+                <p>$99,99</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 fw-bold fs-2">
+                <figure><img src="../img/box_guantes.png" alt="Guantes de Boxeo" class="img-fluid foto_p w-75"></figure>
+                <p>Guantes de Boxeo</p>
+                <p>$99,99</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 fw-bold fs-2">
+                <figure><img src="../img/gorra.png" alt="Gorra" class="img-fluid foto_p w-75"></figure>
+                <p>Gorra</p>
+                <p>$99,99</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 fw-bold fs-2">
+                <figure><img src="../img/botella.png" alt="Botella de agua" class="img-fluid foto_p w-75"></figure>
+                <p>Botella de agua</p>
+                <p>$99,99</p>
+            </div>
+            <div class="col-12 col-md-6 col-xl-4 text-center mt-5 mb-5 fw-bold fs-2">
+                <figure><img src="../img/guantes.png" alt="Guantes para Gym" class="img-fluid foto_p w-75"></figure>
+                <p>Guantes para Gym</p>
+                <p>$99,99</p>
+            </div>
+    
+            <div class="col-12 text-center mt-5 mb-5 pt-5 pb-5 fw-bold fs-1">
+                <p>Venta unicamente desde el local, contactanos por mail para hacer tu encargo</p>
+                <div><a href="contacto.html" class="boton fw-normal">Contactanos</a></div>
+            </div>
+        </section>
+    </main>
+    <footer class="conteiner-xl">
+        <div class="row redes justify-content-end">
             <a href="https://github.com/AlexDel325" target="_blank" class="github">github</a>
             <a href="#" class="instagram">instagram</a>
         </div>

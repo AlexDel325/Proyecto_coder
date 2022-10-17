@@ -10,34 +10,44 @@
 </head>
 
 <body>
-    <header>
-        <h1>logo</h1>
-        <figure class="logo"><img src="../img/strength_logo_min.svg" alt="logo_del_gym"></figure>
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="cronograma.html">Cronograma</a></li>
-                <li><a href="merch.html">Merchandising</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="sticky-top">
+        <h1>strength</h1>
+        <nav class="navbar navbar-dark navbar-expand-md container">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../img/strength_logo_min.svg" alt="strength_logo" width="150" height="100">
+              </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link nav-lk" href="../pages/actividades.html">Actividades</a>
+                    <a class="nav-link nav-lk" href="../pages/cronograma.html">Cronograma</a>
+                    <a class="nav-link nav-lk" href="../pages/merch.html">Merchandising</a>
+                    <a class="nav-link nav-lk" href="#">Contacto</a>
+                  </div>
+                </div>
+              </div>
+          </nav>
     </header>
-    <section id="contacto">
-        <article class="contacto">
-            <h2>Contacto</h2>
-            <p>puedes contactarnos a traves del siguiente formulario o por nuestras redes sociales</p>
-            <form action="index.html" method="GET">
-                <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre">
-                <input type="text" name="asunto" id="asunto" class="input" placeholder="Asunto">
-                <input type="text" name="email" id="email" class="input" placeholder="Correo Electronico">
-                <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Mensaje..."></textarea>
-                <input type="submit" name="enviar" id="enviar" class="boton">
-            </form>
-        </article>
-    </section>
-    <footer>
-        <div class="redes">
+    <main class="container-xl sombra bg-claro ">
+        <section class="row contacto-vp">
+            <article class=" col-12 text-center pt-5 pb-5 d-flex flex-column align-items-center">
+                <h2 class="fw-semibold fs-1 m-3 mt-5">CONTACTO</h2>
+                <p>puedes contactarnos a traves del siguiente formulario o por nuestras redes sociales</p>
+                <form action="index.html" method="GET" class="mt-5 w-50">
+                    <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre">
+                    <input type="text" name="asunto" id="asunto" class="input" placeholder="Asunto">
+                    <input type="text" name="email" id="email" class="input" placeholder="Correo Electronico">
+                    <textarea name="mensaje" id="mensaje" cols="40" rows="10" placeholder="Mensaje..."></textarea>
+                    <input type="submit" name="enviar" id="enviar" class="boton">
+                </form>
+            </article>
+        </section>
+      </main>
+      <footer class="conteiner-xl">
+        <div class="row redes justify-content-end">
             <a href="https://github.com/AlexDel325" target="_blank" class="github">github</a>
             <a href="#" class="instagram">instagram</a>
         </div>

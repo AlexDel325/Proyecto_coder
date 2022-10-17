@@ -10,6 +10,12 @@ html {
     font-size: 62.5%;
     background-color: #F9F2ED;
 }
+body {background-color: #303030;}
+
+.sombra {box-shadow: -1px 4px 75px -2px rgba(0,0,0,0.75);}
+
+.bg-claro{background-color: #F9F2ED;}
+
 
 /* ------- imagenes ------ */
 
@@ -21,13 +27,12 @@ img {
 /* ------- header ------ */
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    height: 100px;
     background-color: #DB1822;
+    padding: 1rem;
+    box-shadow: -1px 4px 34px -9px rgba(0,0,0,0.75);
 }
+
+.nav-lk{ color:#F9F2ED;}
 
 h1 {
     font-size: 0px;
@@ -49,7 +54,7 @@ nav ul {
 }
 
 
-nav ul li a {
+.link-menu {
     text-decoration: none;
     color: #F9F2ED;
     font-weight: 600;
@@ -104,6 +109,7 @@ footer {
     padding: 15px;
     text-align: center;
     margin-top: 1em;
+    transition: 0.3s;
 }
 
 .nosotros-btn {
@@ -126,6 +132,8 @@ footer {
     color: #F9F2ED;
 }
 
+
+
 /* ------- inicio ------ */
 
 .main {
@@ -134,11 +142,11 @@ footer {
 }
 
 .main figure {
-    padding: 15rem 0;
+    padding: 8rem;
 }
 
 .main figure img {
-    width: 65rem;
+    width: 100%;
 }
 
 .main div a {
@@ -171,9 +179,6 @@ footer {
     font-weight: 600;
     border-bottom: #303030 solid 2.25rem;
     border-top: #303030 solid 2.25rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
 }
 
 .fondo div {
@@ -181,14 +186,9 @@ footer {
 }
 
 .fondo div figure {
-    margin: 10rem;
+
     margin-bottom: 0;
     padding: 0;
-}
-
-.foto {
-    width: 500rem;
-    max-width: 55%;
 }
 
 .ac_reverse {
@@ -197,8 +197,6 @@ footer {
 }
 
 .actividades {
-    display: flex;
-    flex-direction: column;
     background-color: #30303094;
     margin: 0 30rem 0 10rem;
 
@@ -210,7 +208,6 @@ footer {
     margin-top: 2em;
     margin-bottom: 2rem;
     margin-left: 4rem;
-    max-width: 60%;
 }
 
 .actividades p,
@@ -233,29 +230,21 @@ footer {
 
 /* ------- cronograma ------ */
 
-#cronograma {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.margen-crono {
+    margin: 2em;
+    margin-top: 0;
 }
 
-#cronograma h2 {
-    font-size: 2em;
-    margin-top: 2em;
-    margin-bottom: 1em;
-    align-self: flex-start;
-    margin-left: 13%;
-}
-
-table {
-    width: 73%;
-    margin-top: .5em;
+.tabla {
+    overflow-x: auto;
+    display: block;
 }
 
 th,
 td {
     padding: 1.2em;
+    padding-left: 2.4em;
+    padding-right: 2.4em;
 }
 
 th,
@@ -269,19 +258,13 @@ td {
     color: #F9F2ED;
 }
 
-#cronograma div a {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 500px;
-}
-
-#ubicacion {
+.ubicacion {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-#ubicacion h2 {
+.ubicacion h2 {
     font-size: 2em;
     margin: 2em;
     margin-left: 13%;
@@ -290,129 +273,18 @@ td {
 iframe {
     width: 100%;
     height: 50vh;
-    margin-left: 13%;
-    margin-right: 13%;
 }
-
-.direccion {
-    margin: 1em;
-    margin-left: 13%;
-    margin-bottom: 10em;
-}
-
 
 /* ------- merch ------ */
-.baner-merch {
-    width: 50%;
-}
-
-.baner-merch h2 {
-    margin-top: 3em;
-    font-size: 3em;
-    margin-left: 10rem;
-}
-
-.baner-merch p {
-    font-size: .9em;
-    margin-left: 10rem;
-}
-
-.baner-merch div {
-    margin-bottom: 6em;
-    margin-left: 10rem;
-}
-
-.baner-merch div {
-    align-self: flex-start;
-}
-
-.baner-merch div figure {
-    align-self: center;
-}
-
-.baner-merch div figure img {
-    width: 100vw
-}
-
-.merch {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
-    text-align: center;
-    justify-items: center;
-    align-items: center;
-    margin: 10rem auto;
-    max-width: 120rem;
-}
-
-.productos {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 30rem;
-    text-align: center;
-}
-
-.productos figure {
-    text-align: center;
-    grid-column: 1/ span 2;
-}
-
-.productos p {
-    text-align: left;
-    font-weight: 400;
-}
-
-.precio {
-    text-align: right !important;
-}
 
 .foto_p {
-    max-width: 300px;
     border-radius: .8rem;
     border: #3030301e solid 1px;
 }
 
-.venta {
-    grid-column: 1/ span 3;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    font-weight: 600;
-}
-
-.venta p {
-    font-size: 2rem;
-}
-
 /* ------- contacto ------ */
-
-.contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 3.5% 0;
-}
-
-.contacto h2 {
-    font-size: 1.5em;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-}
-
-.contacto p {
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.contacto,
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.contacto-vp {
+    min-height: 85vh;
 }
 
 input,
@@ -423,7 +295,6 @@ textarea {
     margin: 1em;
     border: 1px solid #303030;
     background-color: #fffcfa;
-
 }
 
 textarea {
