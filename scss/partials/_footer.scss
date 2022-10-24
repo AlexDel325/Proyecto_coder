@@ -1,0 +1,28 @@
+footer {
+    background-color: #DB1822;
+
+    .redes {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 2rem 0;
+        margin-right: 10rem;
+        max-width: 1200px;
+        margin: auto;
+
+        .red1 {
+            font-size: 0;
+            width: 3.25rem;
+            height: 3.25rem;
+            margin: 0 1rem;
+            background: no-repeat url(../img/github.svg);
+            background-size: 100%;
+        }
+
+        .red2 {
+            @extend .red1;
+            background: no-repeat url(../img/instagram.svg);
+        }
+
+    }
+
+}

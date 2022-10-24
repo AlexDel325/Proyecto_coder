@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strenth</title>
+    <link rel="stylesheet" href="../css/translated.css">
 </head>
 
 <body>
     <header>
         <h1>logo</h1>
-        <a href="../index.html" class="logo"><img src="../img/strength_logo_min.svg" alt="logo_del_gym"></a>
-        <nav>
-            <ul>
-                <li><a href="actividades.html">Actividades</a></li>
-                <li><a href="#">Cronograma</a></li>
-                <li><a href="merch.html">Merchandising</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <div>
+            <a href="../index.html" class="logo"><img src="../img/strength_logo_min.svg" alt="logo_del_gym"></a>
+            <nav>
+                <div id="toggle-menu" class="toggle-menu">
+                    <label for="toggle-menu__checkbox"> <img src="../img/menu.svg" alt="menu"></label>
+                </div>
+                <input type="checkbox" class="toggle-menu__checkbox" id="toggle-menu__checkbox">
+                <ul class="main-menu">
+                    <li><a href="actividades.html" class="nav-link">Actividades</a></li>
+                    <li><a href="#" class="nav-link">Cronograma</a></li>
+                    <li><a href="merch.html" class="nav-link">Merchandising</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <section id="cronograma">
@@ -134,9 +141,9 @@
         </article>
     </section>
     <footer>
-        <div>
-            <a href="#" class="github">github</a>
-            <a href="#" class="instagram">instagram</a>
+        <div class="redes">
+            <a href="#" class="red1">github</a>
+            <a href="#" class="red2">instagram</a>
         </div>
     </footer>
 </body>
