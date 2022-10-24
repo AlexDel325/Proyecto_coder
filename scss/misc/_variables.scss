@@ -1,0 +1,33 @@
+// ------ Colores ------ //
+
+$dark: #303030;
+$light: #F9F2ED;
+$red: #DB1822;
+
+// ------ Tamaño de Texto ------ //
+
+$titulo: 2.5em;
+$subtitulo: 2em;
+$parrafo: 1.6em;
+
+// ------ Estructura ------ //
+
+.contenedor {
+    max-width: 1200px;
+    margin: auto auto;
+
+    .fila {
+        display: flex;
+        flex-wrap: wrap;
+
+        .col {
+            flex: 1;
+        }
+
+        @for $width from 1 through 12 {
+            col-#{$width} {
+                width: $width / 12 * 100%;
+            }
+        }
+    }
+}

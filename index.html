@@ -1,55 +1,59 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Strenth</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/translated.css">
 </head>
 
 <body>
     <header>
         <h1>logo</h1>
-        <figure class="logo"><img src="img/strength_logo_min.svg" alt="logo_del_gym"></figure>
-        <nav>
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="pages/actividades.html">Actividades</a></li>
-                <li><a href="pages/cronograma.html">Cronograma</a></li>
-                <li><a href="pages/merch.html">Merchandising</a></li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="main">
-        <figure><img src="img/strength_logo.svg" alt="logo_de_strenth_centro_de_entrenamiento"></figure>
-        <h2>Descubre quienes somos</h2>
         <div>
-            <a href="#nosotros" class="boton">Nosostros</a>
+            <a href="#" class="logo"><img src="img/strength_logo_min.svg" alt="logo_del_gym"></a>
+            <nav>
+                <ul>
+                    <li><a href="pages/actividades.html">Actividades</a></li>
+                    <li><a href="pages/cronograma.html">Cronograma</a></li>
+                    <li><a href="pages/merch.html">Merchandising</a></li>
+                    <li><a href="pages/contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
-    </section>
-    <section id="nosotros">
-        <article class="nosotros">
-            <h2>Quienes somos</h2>
-            <figure class="prof"><img src="img/nosotros.png" alt="equipo de 2 profesores"></figure>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis,
-                cumque eligendi dolor iste corporis, obcaecati impedit quae alias repellat
-                reprehenderit repudiandae ut commodi nihil magni deserunt praesentium quas quaerat
-                minima quisquam sint iure unde sunt earum. Consequatur officia animi magni,
-                quia exercitationem quis expedita accusantium architecto officiis explicabo
-                tempore impedit omnis harum aliquid ea veniam totam eveniet nobis dolor, vel aut optio.
-                Eos repellat rerum ullam id a voluptate, fugit pariatur temporibus hic architecto iusto
-                qui saepe soluta fugiat consequatur animi necessitatibus iure.
-                <a href="pages/actividades.html" class="boton">Ver actividades</a>
+    </header>
+    <main class="contenedor">
+        <section class="fila">
+            <figure class="col-4"><img src="img/strength_logo.svg" alt="logo_de_strenth_centro_de_entrenamiento">
+            </figure>
+            <div>
+                <a href="#nosotros">Nosostros</a>
+                <a href="pages/merch.html">Unete al equipo</a>
+            </div>
+        </section>
+        <section class="fila">
+            <h2 class="col-12">Quienes somos</h2>
+            <figure class="col-6"><img src="img/nosotros.png" alt="equipo de 2 profesores"></figure>
+            <p class="col-6">
+                Somos <span>Strength</span>, un centro de entrenamiento y te ofrecemos las mejores instalaciones,
+                amplios horarios,clases con profesores especializados y actividades
+                para todos sin importar la edad o condición física actual
+                <a href="pages/cronograma.html">Ver actividades</a>
             </p>
-        </article>
-    </section>
+            <h3 class="col-12">Actividades</h3>
+            <div class="col-6"><a href="/pages/actividades.html#crossfit">Crossfit</a></div>
+            <div class="col-6"><a href="/pages/actividades.html#boxeo">Boxeo</a></div>
+            <div class="col-6"><a href="/pages/actividades.html#zumba">Zumba</a></div>
+            <div class="col-6"><a href="/pages/actividades.html#stretching">stretching</a></div>
+        </section>
+    </main>
     <footer>
         <div class="redes">
-            <a href="#" class="github">github</a>
-            <a href="#" class="instagram">instagram</a>
+            <a href="#">github</a>
+            <a href="#">instagram</a>
         </div>
     </footer>
 </body>
+
 </html>
