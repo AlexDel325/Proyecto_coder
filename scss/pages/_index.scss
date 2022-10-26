@@ -1,0 +1,169 @@
+// ------ hero ------ //
+body {
+    .contenedor {
+        .hero {
+            @extend .row;
+            background-color: $red;
+
+            .col-12 {
+                margin-top: 5rem;
+                margin-bottom: 5rem;
+                text-align: center;
+
+                .logo {
+                    width: 50rem;
+                    padding: 5rem;
+                }
+            }
+        }
+
+        // ------ nosotros ------ //
+
+        .nosotros {
+            margin-left: $gap / 2;
+            margin-right: $gap / 2;
+
+            @extend .row;
+            padding-bottom: 4rem;
+
+            h2 {
+                margin-top: 5rem;
+                margin-bottom: 2rem;
+            }
+
+            h3 {
+                margin-top: 2rem;
+
+            }
+
+            figure {
+                img {
+                    border-radius: 0.5rem;
+                }
+            }
+
+            p {
+                margin-top: $gap;
+                text-align: justify;
+            }
+
+            .act {
+                display: grid;
+                row-gap: $gap / 4;
+                column-gap: $gap / 4;
+                grid-template-columns: 1fr;
+                list-style: none;
+                margin-top: $gap / 1.25;
+                margin-left: $gap / 2;
+                margin-right: $gap / 2;
+
+                li {
+                    border-radius: 0.2rem;
+                    background-color: $red;
+                
+                    text-align: center;
+                    padding: 1.25rem;
+                    transition: 0.3s;
+                    a {
+                        text-decoration: none;
+                        color:$light;
+                    }
+                }
+
+                li:hover{
+                    background-color: $dark;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
+
+
+// MediaQuery
+
+@media screen and (min-width:768px) {
+
+    body {
+        .contenedor {
+            .nosotros {
+                margin-left: 0;
+                margin-right: 0;
+
+                figure {
+                    img {
+                        margin-top: 1.5rem;
+                    }
+                }
+
+                p {
+                    margin-top: 0;
+                    text-align: left;
+                }
+
+                .act {
+
+                    grid-template-columns: 1fr 1fr;
+
+                    li {
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        padding: 1.25rem;
+                        transition: 0.3s;
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+
+                    li:hover{
+                        background-color: $dark;
+                        color: $light;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1032px) {
+
+    body {
+        .contenedor {
+            .nosotros {
+
+                figure {
+                    img {
+                        margin-top: 0;
+                    }
+                }
+
+                .act {
+
+                    grid-template-columns: 1fr 1fr;
+
+                    li {
+                        border-radius: 0.2rem;
+                        text-align: center;
+                        padding: 3rem;
+
+
+                        a {
+                            text-decoration: none;
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+
+.nos-btn {
+    @extend .btn-red2;
+    display: block;
+    width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+}

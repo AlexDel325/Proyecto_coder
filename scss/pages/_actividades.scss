@@ -1,0 +1,104 @@
+.contenedor {
+    .row {
+        .actividades {
+        max-width: 1200px;
+            padding-top: 4.5em;
+            padding-left: $gap / 2;
+            color: $light;
+            background-color: $dark;
+            border-bottom: $dark 1rem solid;
+            border-top: $dark 1rem solid;
+            width: 100%;
+
+            div {
+                margin-top: $gap;
+                display: flex;
+                flex-wrap: wrap;
+                margin-bottom: 3rem;
+                justify-content: center;
+
+                a {
+                    margin-right: 0.8rem;
+                    margin-top: 1rem;
+                }
+            }
+        }
+
+        .fotos_act {
+            background: url(../img/background.png);
+            width: 100%;
+            text-align: center;
+
+            img {
+                margin-bottom: -0.3rem;
+            }
+        }
+    }
+}
+
+
+@media screen and (min-width:768px) {
+
+    .contenedor {
+        .row {
+
+            .actividades {
+                padding-top: 4em;
+                padding-left: $gap / 2;
+                color: $light;
+                background-color: $dark;
+                border-bottom: $dark 1rem solid;
+                border-top: $dark 1rem solid;
+                width: 50%;
+
+                div {
+                    justify-content: flex-start;
+
+                    a {
+                        margin-right: 0.8rem;
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                    }
+                }
+
+                div,
+                p,
+                h2 {
+                    margin-left: $gap * 1.5;
+                }
+            }
+
+            .fotos_act {
+                border-bottom: $dark 1rem solid;
+                border-top: $dark 1rem solid;
+                width: 50%;
+
+                img {
+                    margin-bottom: -0.3rem;
+
+                }
+            }
+        }
+    }
+
+
+    @for $orden from 1 through 8 {
+        .orden#{$orden} {
+            order: $orden;
+        }
+    }
+
+}
+
+@media screen and (min-width:800px) {
+
+    .contenedor {
+        .row {
+            .actividades {
+                @extend .col-6-tablet;
+                padding-top: 13%;
+
+            }
+        }
+    }
+}
