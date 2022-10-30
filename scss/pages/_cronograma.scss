@@ -1,0 +1,95 @@
+.tabla {
+    @extend .col-12,
+    .p;
+    text-align: center;
+    display: block;
+    overflow-x: auto;
+
+    thead {
+        width: 100%;
+
+        tr {
+            th {
+                padding: 1rem;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                color: $light;
+                background-color: $dark;
+            }
+        }
+    }
+
+    tbody {
+        width: 100%;
+
+        tr {
+            td {
+                padding: 1rem;
+                color: $light;
+                background-color: $red;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+
+            }
+
+            .time {
+                @extend .bold;
+                color: $light;
+                background-color: $dark;
+
+            }
+        }
+
+    }
+
+}
+.btn-cont{
+    width: 100%;
+    margin: 1.5rem;
+    text-align: center;
+    height: 5rem;
+}
+.btn-download {
+    @extend .btn-red2, .p;
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-extra {
+    @extend .btn-red, .p;
+    display:inline-block;
+    margin: 1.5rem;
+    margin-left: 0;
+
+}
+
+.width {
+    width: 100%;
+    display: inline-block;
+    text-align: left;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    padding: 3rem;
+    color: $light;
+    border-radius: 0.5rem;
+    background-color: $dark;
+}
+
+
+// tablet
+@media screen and (min-width:768px) {
+
+    .tabla {
+        display: table;
+        margin: auto;
+    }
+
+    .width {
+        width: 49.8%;
+        text-align: center;
+
+    }
+
+}
+
+

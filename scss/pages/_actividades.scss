@@ -1,7 +1,7 @@
 .contenedor {
     .row {
         .actividades {
-        max-width: 1200px;
+            max-width: 1200px;
             padding-top: 4.5em;
             padding-left: $gap / 2;
             color: $light;
@@ -75,12 +75,10 @@
 
                 img {
                     margin-bottom: -0.3rem;
-
                 }
             }
         }
     }
-
 
     @for $orden from 1 through 8 {
         .orden#{$orden} {
