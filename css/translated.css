@@ -412,6 +412,12 @@ body .contenedor .nosotros {
       background-color: #303030;
       color: #F9F2ED; }
 
+.nos-btn {
+  display: block;
+  width: 20rem;
+  text-align: center;
+  margin-top: 2rem; }
+
 @media screen and (min-width: 768px) {
   body .contenedor .nosotros {
     margin-left: 0;
@@ -445,12 +451,6 @@ body .contenedor .nosotros {
       padding: 3rem; }
       body .contenedor .nosotros .act li a {
         text-decoration: none; } }
-
-.nos-btn {
-  display: block;
-  width: 20rem;
-  text-align: center;
-  margin-top: 2rem; }
 
 .contenedor .row .actividades, body .contenedor .hero .actividades, body .contenedor .nosotros .actividades {
   max-width: 1200px;

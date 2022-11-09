@@ -1,12 +1,11 @@
-// ----- h1 ---- // 
-
+//titulo principal
 h1 {
     font-size: 0;
 }
 
-// ----- header ----- //
+//header
 header {
-    box-shadow: -1px -2px 33px -3px rgba(0,0,0,0.57);
+    box-shadow: -1px -2px 33px -3px rgba(0, 0, 0, 0.57);
     position: sticky;
     top: 0;
 
@@ -84,10 +83,12 @@ header {
     }
 }
 
+// css adicional para el menu hamburguesa
 .toggle-menu__checkbox:checked+.main-menu {
     transform: translateY(0);
 }
 
+//tablet
 @media screen and (min-width:768px) {
 
     header {
@@ -147,6 +148,7 @@ header {
     }
 }
 
+//desktop
 @media screen and (min-width:1200px) {
 
     header {

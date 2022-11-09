@@ -1,0 +1,125 @@
+// ------ botones ------ //
+
+.btn {
+    padding: 1rem 2.5rem;
+    text-decoration: none;
+    border-radius: 5rem;
+    background-color: $light;
+    color: $dark;
+    transition: 00.4s;
+}
+
+.btn:hover {
+    background-color: $dark;
+    color: $light;
+}
+
+.btn-dark {
+    @extend .btn;
+    background-color: $dark;
+    color: $light;
+}
+
+.btn-dark:hover {
+    background-color: $red;
+}
+
+.btn-red2 {
+    @extend .btn;
+    background-color: $red;
+    color: $light;
+    border: none;
+}
+
+.btn-red2:hover {
+    background-color: $dark;
+}
+
+.btn-red {
+    @extend .btn;
+    background-color: $red;
+    color: $light;
+}
+
+.btn-red:hover {
+    background-color: $light;
+    color: $dark;
+}
+
+// ------ Estructura basicas------ //
+
+$cols: 12;
+$gap: 2.4rem;
+
+body {
+    background-color: $dark;
+
+    .contenedor {
+        width: 100%;
+        max-width: 1200px;
+        padding-left: $gap / 2;
+        padding-right: $gap / 2;
+        background-color: $light;
+        margin: auto;
+        box-shadow: -1px -2px 33px -3px rgba(0, 0, 0, 0.57);
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: $gap / -2;
+            margin-right: $gap / -2;
+
+            .col {
+                flex: 1 0 0;
+            }
+
+            @for $size from 1 through 12 {
+                .col-#{$size} {
+                    width: $size / 12 * 100%;
+                    padding-left: $gap / 2;
+                    padding-right: $gap / 2;
+                }
+            }
+        }
+    }
+}
+
+
+.mg-top {
+    margin-top: $gap / 2;
+}
+
+.mg-bot {
+    margin-bottom: $gap / 2;
+}
+
+
+// mixin grid-system
+@mixin grid-system($dispositivo) {
+    .row {
+        .col-#{$dispositivo} {
+            flex: 1 0 0;
+        }
+
+        @for $size from 1 through 12 {
+            .col-#{$size}-#{$dispositivo} {
+                width: $size / 12 * 100%;
+                padding-left: $gap / 2;
+                padding-right: $gap / 2;
+            }
+        }
+    }
+}
+
+
+// tablet
+@media screen and (min-width:768px) {
+    @include grid-system('tablet');
+}
+
+// desktop
+
+@media screen and (min-width:1200px) {
+    @include grid-system('desktop');
+}

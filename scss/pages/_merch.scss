@@ -38,7 +38,6 @@
 
 // tablet
 @media screen and (min-width:768px) {
-
     .merch-grid {
         grid-template-columns: 1fr 1fr;
     }
@@ -46,7 +45,6 @@
 
 // desktop
 @media screen and (min-width:1200px) {
-
     .merch-grid {
         grid-template-columns: 1fr 1fr 1fr;
         margin: $gap;

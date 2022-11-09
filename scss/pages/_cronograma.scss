@@ -43,21 +43,25 @@
     }
 
 }
-.btn-cont{
+
+.btn-cont {
     width: 100%;
     margin: 1.5rem;
     text-align: center;
     height: 5rem;
 }
+
 .btn-download {
-    @extend .btn-red2, .p;
+    @extend .btn-red2,
+    .p;
     width: 100%;
     display: inline-block;
 }
 
 .btn-extra {
-    @extend .btn-red, .p;
-    display:inline-block;
+    @extend .btn-red,
+    .p;
+    display: inline-block;
     margin: 1.5rem;
     margin-left: 0;
 
@@ -91,5 +95,3 @@
     }
 
 }
-
-

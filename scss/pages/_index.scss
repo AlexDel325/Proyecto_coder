@@ -1,4 +1,4 @@
-// ------ hero ------ //
+//banner
 body {
     .contenedor {
         .hero {
@@ -17,13 +17,13 @@ body {
             }
         }
 
-        // ------ nosotros ------ //
-
+        //nosotros
         .nosotros {
-            margin-left: $gap / 2;
-            margin-right: $gap / 2;
 
             @extend .row;
+
+            margin-left: $gap / 2;
+            margin-right: $gap / 2;
             padding-bottom: 4rem;
 
             h2 {
@@ -60,17 +60,18 @@ body {
                 li {
                     border-radius: 0.2rem;
                     background-color: $red;
-                
+
                     text-align: center;
                     padding: 1.25rem;
                     transition: 0.3s;
+
                     a {
                         text-decoration: none;
-                        color:$light;
+                        color: $light;
                     }
                 }
 
-                li:hover{
+                li:hover {
                     background-color: $dark;
                     color: $light;
                 }
@@ -79,11 +80,16 @@ body {
     }
 }
 
+.nos-btn {
+    @extend .btn-red2;
+    display: block;
+    width: 20rem;
+    text-align: center;
+    margin-top: 2rem;
+}
 
-// MediaQuery
-
+//tablet
 @media screen and (min-width:768px) {
-
     body {
         .contenedor {
             .nosotros {
@@ -102,7 +108,6 @@ body {
                 }
 
                 .act {
-
                     grid-template-columns: 1fr 1fr;
 
                     li {
@@ -110,12 +115,13 @@ body {
                         text-align: center;
                         padding: 1.25rem;
                         transition: 0.3s;
+
                         a {
                             text-decoration: none;
                         }
                     }
 
-                    li:hover{
+                    li:hover {
                         background-color: $dark;
                         color: $light;
                     }
@@ -125,6 +131,7 @@ body {
     }
 }
 
+//desktop
 @media screen and (min-width:1032px) {
 
     body {
@@ -156,14 +163,4 @@ body {
             }
         }
     }
-}
-
-
-
-.nos-btn {
-    @extend .btn-red2;
-    display: block;
-    width: 20rem;
-    text-align: center;
-    margin-top: 2rem;
 }
